@@ -1,0 +1,84 @@
+@import '~bootstrap/scss/bootstrap';
+$red: #ff0000;
+$light-blue: #94a3b8;
+$button-primary: #7cace4;
+$white: #ffffff;
+
+// COMMON SCSS
+.required-field {
+  font-size: 12px;
+  color: $red;
+}
+
+.text-small {
+  font-size: 14px;
+  color: $light-blue;
+}
+
+.button-primary {
+  padding: 21px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $button-primary;
+  border-radius: 10px;
+  outline: none;
+  border: 0;
+  font-size: 16px;
+  font-weight: 800;
+  color: $white;
+  letter-spacing: 0.4px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.button-secondary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 24px;
+  border: 1px solid #e9eaec;
+  font-size: 16px;
+  background-color: transparent;
+  border-radius: 12px;
+  width: 100%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.button-help {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 11px 24px;
+  border: 1px solid #e9eaec;
+  font-size: 14px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  color: #7cace4;
+  font-weight: 500;
+}
+
+.text-poorti {
+  color: $button-primary;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+}
+
+.success {
+  color: #62e390;
+}
+
+.content-route-wrapper {
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  &.overlay {
+    filter: brightness(0.5);
+  }
+}
+
+.decoration-none {
+  text-decoration: none;
+}

@@ -1,0 +1,135 @@
+$label-text: #2c2e31;
+$grey: #94a3b8;
+$sky: #7cace4;
+$light-sky: #e2e8f0;
+
+.auth-wrapper {
+  max-width: 480px;
+  // position: absolute;
+  top: 50%;
+  left: 50%;
+  // transform: translate(-50%, -50%);
+  margin: 50px auto;
+  .logo {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    height: 71px;
+    width: 54px;
+  }
+  .text-header {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 32px;
+  }
+  .form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    .item-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      position: relative;
+      label {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        color: $label-text;
+      }
+      .custom-input {
+        color: $grey;
+        font-size: 14px;
+        padding: 16px 20px;
+        border-radius: 10px;
+        border: 2px solid $light-sky;
+        outline: none;
+        &:focus {
+          border-color: $sky;
+        }
+        &::placeholder {
+          color: $grey;
+        }
+      }
+      p {
+        font-size: 14px;
+        text-align: center;
+        a {
+          color: #7cace4;
+          text-decoration: none;
+        }
+      }
+      .floating-icon {
+        position: absolute;
+        right: 15px;
+        top: 52%;
+      }
+    }
+    .remember-wrapper {
+      input[type='checkbox'] {
+        height: 20px;
+        width: 20px;
+      }
+    }
+    .login-with {
+      .text-login {
+        font-size: 14px;
+        color: #64748b;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+.modal-bg {
+  height: 100%;
+  width: 100%;
+  background: url('../../../assets/img/bgfor.png');
+  background-repeat: no-repeat;
+  display: flex;
+  gap: 5%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .logo-box {
+    svg {
+      height: 71px;
+      width: 54px;
+    }
+  }
+  .message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    p {
+      font-size: 24px;
+      text-align: justify;
+      font-style: normal;
+      font-weight: 700;
+      margin-bottom: 32px;
+      width: 95%;
+      margin: auto;
+      text-align: center;
+      @media (max-width: 650px) {
+        font-size: 18px;
+      }
+    }
+    h2 {
+      width: 95%;
+      margin: auto;
+      text-align: center;
+      font-size: 24px;
+      font-style: normal;
+
+      font-weight: 700;
+      margin-bottom: 32px;
+      color: #62e390;
+      margin: 0;
+      @media (max-width: 650px) {
+        font-size: 18px;
+      }
+    }
+  }
+}

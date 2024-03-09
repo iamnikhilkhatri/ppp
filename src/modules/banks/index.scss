@@ -1,0 +1,71 @@
+$label-text: #2c2e31;
+$grey: #94a3b8;
+$sky: #7cace4;
+$light-sky: #e2e8f0;
+.bank-form {
+  .form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .item-wrapper {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      position: relative;
+      label {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        color: $label-text;
+      }
+      .custom-input {
+        color: $grey;
+        font-size: 14px;
+        padding: 16px 20px;
+        border-radius: 10px;
+        border: 2px solid $light-sky;
+        outline: none;
+        &:focus {
+          border-color: $sky;
+        }
+        &::placeholder {
+          color: $grey;
+        }
+      }
+      p {
+        font-size: 14px;
+        text-align: center;
+        a {
+          color: #7cace4;
+          text-decoration: none;
+        }
+      }
+      .floating-icon {
+        position: absolute;
+        right: 15px;
+        top: 52%;
+      }
+    }
+    #submitbtn {
+      width: 70%;
+    }
+    .remember-wrapper {
+      input[type='checkbox'] {
+        height: 20px;
+        width: 20px;
+      }
+    }
+    .login-with {
+      .text-login {
+        font-size: 14px;
+        color: #64748b;
+        white-space: nowrap;
+      }
+    }
+  }
+}
